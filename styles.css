@@ -95,8 +95,10 @@ html{
 }
 
 .hero-wrapper {
-    max-width: 750px;
+    max-width: 850px;
     text-align: center;
+    width: 100%;
+     margin: 0 auto;
 }
 
 .hero-headline {
