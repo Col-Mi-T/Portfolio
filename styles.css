@@ -5,9 +5,9 @@
     --bg-dark: #1a1a1a;
     --bg-surface: #ffffff;
 
-    /* Accent Branding (Gold) */
-    --accent-gold: #ff9500;
-    --accent-gold-hover: #ffe284;
+    /* Accent Branding (orange) */
+    --accent-orange: #ff9500;
+    --accent-orange-hover: #ffd29a;
 
     /* Typography Colors */
     --text-dark: #333333;
@@ -26,7 +26,7 @@
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 8px 15px rgba(0, 0, 0, 0.2);
-    --shadow-gold: 0 5px 15px rgba(255, 215, 0, 0.3);
+    --shadow-orange: 0 5px 15px rgba(255, 215, 0, 0.3);
     --shadow-focus: 0 0 5px rgba(255, 215, 0, 0.3);
 }
 
@@ -46,6 +46,16 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+#menu a {
+    color: var(--text-white);
+    text-decoration: none;
+}
+
+#menu a:hover{
+    color:var(--accent-orange)
+}
+
 
 #header {
     position: fixed;
@@ -88,14 +98,14 @@ html {
 }
 
 #home,
-#skills {
+#langs-used {
     background: linear-gradient(139deg, var(--bg-dark), var(--text-dark));
 }
 
 
 #home,
 #projects,
-#skills {
+#langs-used {
     padding: 80px 24px;
     width: 100%;
 }
@@ -123,7 +133,7 @@ html {
     color: var(--text-muted);
 }
 
-.skills-headline {
+.langs-used-headline {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
@@ -154,7 +164,7 @@ html {
 }
 
 .card {
-    background: var(--accent-gold);
+    background: var(--accent-orange);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -172,7 +182,7 @@ html {
     border: 5px dashed var(--bg-dark)
 }
 
-.lang-image{
+.lang-image {
     width: 50%;
     border-radius: 100px;
     border: 5px dashed var(--bg-dark)
@@ -207,7 +217,7 @@ html {
 
 .repo-btn:hover {
     color: var(--text-dark);
-    background: var(--accent-gold-hover);
+    background: var(--accent-orange-hover);
 }
 
 .demo-btn {
@@ -215,16 +225,16 @@ html {
 }
 
 .demo-btn:hover {
-    background: var(--accent-gold-hover)
+    background: var(--accent-orange-hover)
 }
 
 .btn-primary {
-    background-color: var(--accent-gold);
+    background-color: var(--accent-orange);
     color: var(--bg-dark);
 }
 
 .btn-primary:hover {
-    background-color: var(--accent-gold-hover);
+    background-color: var(--accent-orange-hover);
     transform: translateY(-2px);
 }
 
