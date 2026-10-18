@@ -48,6 +48,12 @@ html{
 }
 
 #header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
     align-items:center;
     padding: 10px 20px;
     text-align:center;
@@ -76,18 +82,21 @@ html{
     align-items:center;
     width:100%;
     flex-direction:column;
-    gap:80px;
+    gap:8px;
 }
-
 #home{
     background: linear-gradient(139deg, var(--bg-dark), var(--text-dark));
+}
+
+
+#home, #projects{
     padding: 80px 24px;
     width:100%;
 }
+
 .hero-wrapper {
     max-width: 750px;
     text-align: center;
-    
 }
 
 .hero-headline {
@@ -98,9 +107,17 @@ html{
     color: var(--text-white);
 }
 
+.project-headline{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    color: var(--text-muted);
+}
+
 .hero-bio {
     font-size: 1.2rem;
-    color: var(--text-muted);
+    color: var(--text-white);
     line-height: 1.7;
     margin-bottom: 40px;
 }
@@ -110,6 +127,21 @@ html{
     justify-content: center;
     gap: 16px;
     flex-wrap: wrap;
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:2rem;
+}
+
+.project-card{
+    background: var(--accent-gold);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
 .btn {
@@ -147,7 +179,7 @@ html{
     #header{
         display:flex;
         justify-content:space-between;
-        position:relative;
+        position:fixed;
     }
     
     #hamburger{
