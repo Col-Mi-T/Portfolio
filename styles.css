@@ -55,7 +55,7 @@ html{
     z-index: 1000;
 
     align-items:center;
-    padding: 10px 20px;
+    padding: 16px 24px;
     text-align:center;
     background:var(--bg-dark);
     color:var(--text-white);
