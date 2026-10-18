@@ -45,8 +45,8 @@
                             <img class="image" src="images/screenshot.png" alt="Demo Screenshot">
                             <p class="project-summary">This does x, y and z</p>
                             <div class="links">
-                                <a class="btn repo-btn" href="github.com">repo</a>
-                                <a class="btn demo-btn"href="#">demo</a>
+                                <a class="btn repo-btn" href="github.com">Repository</a>
+                                <a class="btn demo-btn"href="#">Demo Link</a>
                             </div>
                         </div>
 
@@ -55,8 +55,8 @@
                             <img class="image" src="images/screenshot.png" alt="Demo Screenshot">
                             <p class="project-summary">This does x, y and z</p>
                             <div class="links">
-                                <a class="btn repo-btn" href="github.com">repo</a>
-                                <a class="btn demo-btn" href="#">demo</a>
+                                <a class="btn repo-btn" href="github.com">Repository</a>
+                                <a class="btn demo-btn" href="#">Demo Link</a>
                             </div>
                         </div>
 
@@ -65,8 +65,8 @@
                             <img class="image" src="images/screenshot.png" alt="Demo Screenshot">
                             <p class="project-summary">This does x, y and z</p>
                             <div class="links">
-                                <a class="btn repo-btn" href="github.com">repo</a>
-                                <a class="btn demo-btn" href="#">demo</a>
+                                <a class="btn repo-btn" href="github.com">Repository</a>
+                                <a class="btn demo-btn" href="#">Demo Link</a>
                             </div>
                         </div>
 
@@ -75,8 +75,8 @@
                             <img class="image" src="images/screenshot.png" alt="Demo Screenshot">
                             <p class="project-summary">This does x, y and z</p>
                             <div class="links">
-                                <a class="btn repo-btn" href="github.com">repo</a>
-                                <a class="btn demo-btn" href="#">demo</a>
+                                <a class="btn repo-btn" href="github.com">Repository</a>
+                                <a class="btn demo-btn" href="#">Demo Link</a>
                             </div>
                         </div>
 
@@ -85,8 +85,8 @@
                             <img class="image" src="images/screenshot.png" alt="Demo Screenshot">
                             <p class="project-summary">This does x, y and z</p>
                             <div class="links">
-                                <a class="btn repo-btn" href="github.com">repo</a>
-                                <a class="btn demo-btn" href="#">demo</a>
+                                <a class="btn repo-btn" href="github.com">Repository</a>
+                                <a class="btn demo-btn" href="#">Demo Link</a>
                             </div>
                         </div>
 
@@ -95,8 +95,8 @@
                             <img class="image" src="images/screenshot.png" alt="Demo Screenshot">
                             <p class="project-summary">This does x, y and z</p>
                             <div class="links">
-                                <a class="btn repo-btn" href="github.com">repo</a>
-                                <a class="btn demo-btn" href="#">demo</a>
+                                <a class="btn repo-btn" href="github.com">Repository</a>
+                                <a class="btn demo-btn" href="#">Demo Link</a>
                             </div>
                         </div>
                         
@@ -154,6 +154,14 @@
         // Toggles the class: if it's there, remove it; if it's missing, add it
         menuList.classList.toggle('active');
         hamburger.classList.toggle('active');
+
+        if (menuList.classList.contains('active')) {
+            hamburger.innerText = '×';
+        } else {
+            hamburger.innerText = '☰';
+        }
     });
+
+    
 
 </script>

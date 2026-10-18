@@ -259,6 +259,7 @@ html {
 
     #hamburger {
         display: flex;
+        cursor:pointer;
 
     }
 
