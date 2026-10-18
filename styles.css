@@ -16,7 +16,7 @@
     --text-white: #ffffff;
 
     /* Layout, Borders & Components */
-    --border-light: #dddddd;
+    --border-light: #ffffff;
     --button-disabled: #cccccc;
 
     /* Gradients */
@@ -146,6 +146,25 @@ html{
     transition: all 0.3s ease;
 }
 
+.project-title{
+    text-align:left
+}
+.image{
+    width:100%;
+    border-radius:30px;
+    border: 5px dashed var(--bg-dark)
+}
+.links{
+    border-top: 1px solid var(--border-light);
+    padding-top:20px;
+    text-align:right;
+}
+.links a{
+    padding: 15px;
+    border:3px solid var(--bg-dark);
+    border-radius:10px;
+    text-decoration: none;
+}
 .btn {
     padding: 12px 28px;
     font-size: 0.95rem;
@@ -153,6 +172,22 @@ html{
     text-decoration: none;
     border-radius: 6px;
     transition: all 0.25s ease;
+}
+
+.repo-btn{
+    color:var(--text-white);
+    background:var(--bg-dark);
+}
+.repo-btn:hover{
+    color:var(--text-dark);
+    background:var(--accent-gold-hover);
+}
+
+.demo-btn{
+    color: var(--text-dark);
+}
+.demo-btn:hover{
+    background:var(--accent-gold-hover)
 }
 
 .btn-primary {
@@ -204,3 +239,11 @@ html{
         left: 0;
     }
 }
+
+
+
+
+
+
+
+
