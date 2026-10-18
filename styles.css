@@ -36,69 +36,75 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 1.6;
-    height:100vh;
-    
+    height: 100vh;
+
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-#header{
+#header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
 
-    align-items:center;
+    align-items: center;
     padding: 16px 24px;
-    text-align:center;
-    background:var(--bg-dark);
-    color:var(--text-white);
+    text-align: center;
+    background: var(--bg-dark);
+    color: var(--text-white);
 }
-#hamburger{
-    display:none;
+
+#hamburger {
+    display: none;
 }
-#menu ul{
-    height:auto;
+
+#menu ul {
+    height: auto;
     display: flex;
     flex-direction: row;
     row-gap: 2px;
     column-gap: 20px;
     list-style-type: none;
     justify-content: center;
-    align-items:flex-start;
+    align-items: flex-start;
     align-content: flex-start;
     flex-wrap: wrap;
 }
 
-#main{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    width:100%;
-    flex-direction:column;
-    gap:8px;
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
 }
-#home, #skills{
+
+#home,
+#skills {
     background: linear-gradient(139deg, var(--bg-dark), var(--text-dark));
 }
 
 
-#home, #projects, #skills{
+#home,
+#projects,
+#skills {
     padding: 80px 24px;
-    width:100%;
+    width: 100%;
 }
 
 .hero-wrapper {
     max-width: 850px;
     text-align: center;
     width: 100%;
-     margin: 0 auto;
+    margin: 0 auto;
 }
 
 .hero-headline {
@@ -109,7 +115,7 @@ html{
     color: var(--text-white);
 }
 
-.project-headline{
+.project-headline {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
@@ -117,13 +123,16 @@ html{
     color: var(--text-muted);
 }
 
-.skills-headline{
+.skills-headline {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 24px;
     color: var(--text-white);
 }
+
+
+
 .hero-bio {
     font-size: 1.2rem;
     color: var(--text-white);
@@ -138,13 +147,13 @@ html{
     flex-wrap: wrap;
 }
 
-.project-grid{
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap:2rem;
+    gap: 2rem;
 }
 
-.project-card{
+.card {
     background: var(--accent-gold);
     padding: 2rem;
     border-radius: 8px;
@@ -153,25 +162,29 @@ html{
     transition: all 0.3s ease;
 }
 
-.project-title{
-    text-align:left
+.card-title {
+    text-align: left
 }
-.image{
-    width:100%;
-    border-radius:30px;
+
+.image {
+    width: 100%;
+    border-radius: 30px;
     border: 5px dashed var(--bg-dark)
 }
-.links{
+
+.links {
     border-top: 1px solid var(--border-light);
-    padding-top:20px;
-    text-align:right;
+    padding-top: 20px;
+    text-align: right;
 }
-.links a{
+
+.links a {
     padding: 15px;
-    border:3px solid var(--bg-dark);
-    border-radius:10px;
+    border: 3px solid var(--bg-dark);
+    border-radius: 10px;
     text-decoration: none;
 }
+
 .btn {
     padding: 12px 28px;
     font-size: 0.95rem;
@@ -181,20 +194,22 @@ html{
     transition: all 0.25s ease;
 }
 
-.repo-btn{
-    color:var(--text-white);
-    background:var(--bg-dark);
-}
-.repo-btn:hover{
-    color:var(--text-dark);
-    background:var(--accent-gold-hover);
+.repo-btn {
+    color: var(--text-white);
+    background: var(--bg-dark);
 }
 
-.demo-btn{
+.repo-btn:hover {
+    color: var(--text-dark);
+    background: var(--accent-gold-hover);
+}
+
+.demo-btn {
     color: var(--text-dark);
 }
-.demo-btn:hover{
-    background:var(--accent-gold-hover)
+
+.demo-btn:hover {
+    background: var(--accent-gold-hover)
 }
 
 .btn-primary {
@@ -218,23 +233,24 @@ html{
     border-color: var(--text-white);
 }
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
-    #header{
-        display:flex;
-        justify-content:space-between;
-        position:fixed;
+    #header {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
     }
-    
-    #hamburger{
-        display:flex;
+
+    #hamburger {
+        display: flex;
 
     }
+
     #menu ul {
-        border-top:1px solid var(--bg-primary);
+        border-top: 1px solid var(--bg-primary);
         position: absolute;
-        padding:20px 2px;
-        display:block;
+        padding: 20px 2px;
+        display: block;
         top: 100%;
         left: -100%;
         width: 100%;
@@ -246,11 +262,3 @@ html{
         left: 0;
     }
 }
-
-
-
-
-
-
-
-
