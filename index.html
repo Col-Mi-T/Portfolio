@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Portfolio Homepage</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <nav id="header">
+            <div id="logo">LOGO</div>
+            <div id=menu>
+                <ul>
+                    <li>Home</li>
+                    <li>Projects</li>
+                    <li>Skills & Languages</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div id="hamburger">...</div>
+        </nav>
+
+        <div id="main">
+            <section id="home">
+                <div class="hero-wrapper">
+                    <h1 class="hero-headline">Building Software with Precision and Logic.</h1>
+                    <p class="hero-bio">
+                        I am a software developer focusing on low-level performance in Rust and modular application architecture in
+                        Python. Welcome to my personal engineering sandbox.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Examine My Work</a>
+                        <a href="https://github.com" target="_blank" class="btn btn-secondary">View GitHub</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="projects">
+                projects
+            </section>
+        </div>
+    </body>
+
+</html>
+
+<script>
+    const hamburger = document.querySelector('#hamburger');
+    const menuList = document.querySelector('#menu ul');
+
+    hamburger.addEventListener('click', () => {
+        // Toggles the class: if it's there, remove it; if it's missing, add it
+        menuList.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    });
+
+</script>
